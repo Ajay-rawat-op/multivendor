@@ -12,13 +12,7 @@ const categories = [
     { title: "Books" },
     { title: "Toys" },
     { title: "Furniture" },
-    { title: "Clothing" },
-    { title: "Books" },
-    { title: "Toys" },
-    { title: "Furniture" },
-    { title: "Books" },
-    { title: "Toys" },
-    { title: "Furniture" }
+    { title: "Clothing" }
 ];
 
 const HomePage = () => {
