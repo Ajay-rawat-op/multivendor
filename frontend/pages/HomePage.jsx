@@ -10,12 +10,7 @@ const categories = [
     { title: "Furniture" },
     { title: "Books" },
     { title: "Toys" },
-    { title: "Furniture" },
-    { title: "Beauty Products" },
-    { title: "Kitchen Appliances" },
-    { title: "Sports Equipment" },
-    { title: "Mobile Phones" },
-    { title: "Footwear" }
+    { title: "Furniture" }
 ];
 
 const HomePage = () => {
