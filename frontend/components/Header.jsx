@@ -7,7 +7,7 @@ function Header() {
     const location = useLocation();
 
     return (
-        <header className="bg-orange-50 shadow-md py-3 px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <header className="bg-orange-50 shadow-md pt-5 px-16 flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-2xl font-extrabold text-orange-600">
                 <Link to="/">Mall Mandi</Link>
             </div>
@@ -37,20 +37,20 @@ function Header() {
                 <input
                     type="text"
                     placeholder="Search for products..."
-                    className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-400 transition"
+                    className="w-full pl-10 pr-40 py-2 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-400 transition"
                 />
             </div>
 
             <div className="space-x-3">
                 <button
                     onClick={() => navigate("/login")}
-                    className="px-5 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 shadow-md transition font-semibold"
+                    className="px-7 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 shadow-md transition font-semibold"
                 >
                     Login
                 </button>
                 <button
                     onClick={() => navigate("/register")}
-                    className="px-5 py-2 bg-gray-400 text-white rounded-full hover:bg-gray-500 shadow-md transition font-semibold"
+                    className="px-7 py-2 bg-gray-400 text-white rounded-full hover:bg-gray-500 shadow-md transition font-semibold"
                 >
                     Register
                 </button>

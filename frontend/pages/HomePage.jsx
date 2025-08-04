@@ -19,9 +19,9 @@ const HomePage = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="min-h-screen bg-orange-50 p-4 pb-24">
+        <div className="min-h-screen bg-orange-50 p-4 pl-15 pb-24">
             {/* Hero Section */}
-            <div className="text-start mt-5 mb-30">
+            <div className="text-start mt-10 mb-20">
                 <h1 className="text-5xl text-orange-800">Sell Your </h1>
                 <p className="text-5xl font-bold text-orange-800 font-bold">Products Onlines 🛒</p>
                 <p className="text-lg text-gray-700 mt-2">
