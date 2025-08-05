@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-10">
+    <footer className="bg-gray-900 text-white py-5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           
@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Line */}
-        <div className="mt-10 border-t border-gray-700 pt-6 text-sm text-gray-500 text-center">
+        <div className="mt-8 border-t border-gray-700 pt-4 text-sm text-gray-500 text-center">
           © 2025 Mall Mandi. All rights reserved.
         </div>
       </div>
