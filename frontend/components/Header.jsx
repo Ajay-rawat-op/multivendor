@@ -7,7 +7,7 @@ function Header() {
     const location = useLocation();
 
     return (
-        <header className="bg-orange-50 shadow-md pt-5 px-16 flex flex-col md:flex-row justify-between items-center gap-4">
+        <header className="bg-orange-50 shadow-md py-5 px-16 flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-2xl font-extrabold text-orange-600">
                 <Link to="/">Mall Mandi</Link>
             </div>
