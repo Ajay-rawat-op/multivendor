@@ -9,6 +9,7 @@ const Footer = () => {
             <h2 className="text-2xl font-bold text-orange-400 mb-3">
               Mall Mandi 🛒
             </h2>
+            
             <p className="text-gray-400 text-sm">
               Sabzi, kirana, kapde, electronics – sab kuch ek hi jagah! <br />
               Mall Mandi - Desi Shopping ka Digital Bazaar!
