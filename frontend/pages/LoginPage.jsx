@@ -63,12 +63,14 @@ const LoginPage = () => {
             </div>
           </div>
 
+        
           <button
             type="submit"
             className="w-full py-2 rounded-md bg-orange-600 hover:bg-orange-700 text-white font-semibold transition duration-200"
           >
             Login
           </button>
+
         </form>
 
         <p className="text-center text-sm text-gray-600 mt-6">

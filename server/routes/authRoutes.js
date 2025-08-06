@@ -11,7 +11,22 @@ router.post('/register', async (req, res) => {
     try {
         const newUser = new User({ name, email, password: hashedPassword, role });
         await newUser.save();
-        res.status(201).json({ message: 'User registered' });
+
+        const token = jwt.sign(
+            { id: newUser._id, role: newUser.role },
+            process.env.JWT_SECRET,
+            { expiresIn: '7d' }
+        );
+        res.status(201).json({
+            user: {
+                id: newUser._id,
+                name: newUser.name,
+                email: newUser.email,
+                role: newUser.role,
+            },
+            token,
+            message: 'Registration successful'
+        });
     } catch (err) {
         res.status(400).json({ error: 'Email already exists' });
     }
@@ -27,7 +42,7 @@ router.post('/login', async (req, res) => {
     if (!isMatch) return res.status(400).json({ error: 'Invalid password' });
 
     const token = jwt.sign({ id: user._id, role: user.role }, process.env.JWT_SECRET);
-    res.json({ token, role: user.role, name: user.name , message: 'Login successful'});
+    res.json({ token, role: user.role, name: user.name, message: 'Login successful' });
 });
 
 module.exports = router;
