@@ -28,7 +28,7 @@ const RegisterPage = () => {
       await axios.post('http://localhost:5000/api/auth/register', form);
       navigate('/');
     } catch (err) {
-      console.log(err);
+      console.log(err.message);
       setMessage(err.response?.data?.error || 'Registration failed');
     }
   };
@@ -112,11 +112,10 @@ const RegisterPage = () => {
                   type="button"
                   key={roleOption.value}
                   onClick={() => setForm({ ...form, role: roleOption.value })}
-                  className={`flex-1 flex items-center justify-center gap-1 px-2 py-2 rounded-md text-sm font-medium border transition ${
-                    form.role === roleOption.value
-                      ? 'bg-orange-500 text-white border-orange-500'
-                      : 'bg-gray-100 text-gray-700 border-gray-300 hover:bg-orange-100'
-                  }`}
+                  className={`flex-1 flex items-center justify-center gap-1 px-2 py-2 rounded-md text-sm font-medium border transition ${form.role === roleOption.value
+                    ? 'bg-orange-500 text-white border-orange-500'
+                    : 'bg-gray-100 text-gray-700 border-gray-300 hover:bg-orange-100'
+                    }`}
                 >
                   {roleOption.icon}
                   {roleOption.label}
