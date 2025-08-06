@@ -21,7 +21,7 @@ const HomePage = () => {
     const [role, setRole] = useState("");
 
     useEffect(() => {
-        const userData = JSON.parse(localStorage.getItem("user")); // adjust if your key is different
+        const userData = JSON.parse(localStorage.getItem("user"));
         if (userData && userData.role) {
             setRole(userData.role);
         }
