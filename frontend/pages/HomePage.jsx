@@ -31,7 +31,7 @@ const HomePage = () => {
                     onClick={() => navigate("/register")}
                     className="mt-4 bg-orange-600 hover:bg-orange-700 text-white px-6 py-2 rounded-full shadow"
                 >
-                    Shop Now 🛒
+                    register Now 🛒
                 </button>
             </div>
 
