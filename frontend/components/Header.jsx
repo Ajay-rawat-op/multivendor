@@ -40,9 +40,7 @@ function Header() {
                     className="w-full pl-10 pr-40 py-2 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-400 transition"
                 />
             </div>
-
             <div className="space-x-3">
-
                 {localStorage.getItem("token") ? (
                     <button
                         onClick={() => {
@@ -62,7 +60,6 @@ function Header() {
                         Login
                     </button>
                 )}
-
                 <button
                     onClick={() => navigate("/register")}
                     className="px-7 py-2 bg-gray-400 text-white rounded-full hover:bg-gray-500 shadow-md transition font-semibold"
