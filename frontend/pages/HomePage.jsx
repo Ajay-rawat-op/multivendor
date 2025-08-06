@@ -39,9 +39,6 @@ const HomePage = () => {
             <div className="text-start mt-10 mb-20">
                 <h1 className="text-5xl text-orange-800">Sell Your</h1>
                 <p className="text-5xl font-bold text-orange-800 font-bold">Products Online 🛒</p>
-
-
-
                 <p className="text-lg text-gray-700 mt-2">
                     Buy daily essentials & trendy products in one place — at mandi rates!
                 </p>
