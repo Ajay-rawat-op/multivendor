@@ -10,7 +10,8 @@ const categories = [
   { title: "Clothing", image: "https://images.unsplash.com/photo-1521334884684-d80222895322" },
   { title: "Books", image: "https://images.unsplash.com/photo-1512820790803-83ca734da794" },
   { title: "Toys", image: "https://images.pexels.com/photos/163696/toy-car-toy-box-mini-163696.jpeg" },
-  { title: "Furniture", image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc" }
+  { title: "Furniture", image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc" },
+  { title: "Add More +"}
 ];
 
 const HomePage = () => {
