@@ -57,7 +57,7 @@ const HomePage = () => {
             onClick={() => navigate("/register")}
             className="mt-6 px-8 py-3 bg-orange-500 hover:bg-orange-600 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
           >
-            Register Now 🚀
+            Register Now 
           </button>
         </motion.div>
       </div>
